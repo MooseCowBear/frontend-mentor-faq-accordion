@@ -62,3 +62,54 @@ a:not([class]) {
   }
 }
 /* end reset */
+
+.desktop {
+    display: none; /* temp */
+}
+
+/* mobile first */
+body {
+    background: linear-gradient(var(--background-gradient-one), var(--background-gradient-two));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3em;
+    margin: 5em 3em;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    min-height: 10em;
+}
+
+img {
+    position: absolute;
+}
+
+img.figure {
+    top: -20%;
+}
+
+img.shadow {
+    top: 0%;
+    left: 10%;
+    width: 80%;
+}
