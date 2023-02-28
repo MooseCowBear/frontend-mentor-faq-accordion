@@ -109,7 +109,7 @@ h2 {
   min-height: 10em;
 }
 
-.left {
+.right { 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -143,7 +143,7 @@ p {
     align-items: center;
 }
 
-.right {
+.left { 
     min-height: 10em;
     position: relative;
 }
@@ -192,7 +192,6 @@ h2:hover, h2:focus {
     min-width: 6em;
     position: relative;
     min-height: 100%;
-    background-color: black;
   }
 
   main {
@@ -202,15 +201,17 @@ h2:hover, h2:focus {
     padding: 2em;
   }
 
-  .left{
+  .right { 
     margin: 4em;
-  }
-
-  .left {
     align-items: flex-start;
     overflow-y: scroll;
     max-height: 20rem;
+  }
 
+  .right::-webkit-scrollbar{
+    display: none;
+    -ms-overflow-style: none; /*edge*/
+    scrollbar-width: none; /*firefox*/
   }
 
   img.mobile{
