@@ -64,7 +64,7 @@ a:not([class]) {
 /* end reset */
 
 .desktop {
-    display: none; /* temp */
+    display: none; 
 }
 
 /* mobile first */
@@ -166,6 +166,7 @@ img.shadow {
 
 h2:hover, h2:focus {
   color: var(--text-hover);
+  cursor: pointer;
 }
 
 @media (min-width: 700px){
@@ -245,4 +246,11 @@ h2:hover, h2:focus {
 }
 .show:checked ~ label > .expandable > img {
   transform: rotate(180deg);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; }
+.attribution, .attribution a { 
+  color: var(--accent); 
 }
