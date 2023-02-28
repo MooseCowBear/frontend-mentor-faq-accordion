@@ -95,7 +95,7 @@ main {
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     margin: 0.3em 0 0.8em 0;
 }
 
@@ -189,24 +189,28 @@ h2:hover, h2:focus {
   }
   
   .box-container {
-    min-width: 14em;
+    min-width: 6em;
     position: relative;
     min-height: 100%;
+    background-color: black;
   }
 
   main {
     grid-template-columns: 1fr 1fr;
-    min-width: 50rem;
+    max-width: 50rem;
     overflow: hidden;
     padding: 2em;
   }
 
-  .left, .right {
-    margin: 2em;
+  .left{
+    margin: 4em;
   }
 
   .left {
     align-items: flex-start;
+    overflow-y: scroll;
+    max-height: 20rem;
+
   }
 
   img.mobile{
@@ -220,21 +224,22 @@ h2:hover, h2:focus {
   }
 
   img.figure {
-    transform: scale(1.3);
-    bottom: 13%;
-    right: 20%;
+    transform: scale(1.2);
+    bottom: 15%;
+    right: 18%;
   }
 
   img.shadow {
-    bottom: 3%;
+    bottom: 13%;
     left: -55%;
     transform: scale(2);
   }
 
   img.box {
     position: absolute;
-    left: 40%;
-    bottom: 22%;
+    left: 70%;
+    bottom: 34%;
     z-index: 2;
+    transform: scale(2.5);
   }
 }
