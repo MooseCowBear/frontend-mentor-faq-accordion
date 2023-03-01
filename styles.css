@@ -122,7 +122,7 @@ label {
     flex-direction: column;
 }
 
-section {
+.section {
     display: flex;
     flex-direction: column;
     border-bottom: 2px solid var(--accent);
