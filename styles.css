@@ -17,7 +17,6 @@
 
 body,
 h1,
-h2,
 p, 
 section {
   margin: 0;
@@ -99,7 +98,7 @@ h1 {
     margin-bottom: 0.6em;
 }
 
-h2 {
+label {
     font-size: 1.2em;
     font-weight: 400;
     color: var(--text-tertiary);
@@ -168,7 +167,7 @@ img.shadow {
     width: 100%;
 }
 
-h2:hover, h2:focus {
+label:hover, label:focus {
   color: var(--text-hover);
   cursor: pointer;
 }
@@ -251,17 +250,19 @@ h2:hover, h2:focus {
   opacity: 0;
 }
 
+.show:focus:not(.show:checked) ~ .expandable > label  {
+  color: var(--text-hover);
+}
+
 .show:checked ~ p {display: block;}
-.show:checked ~ label > .expandable > h2 {
+
+.show:checked ~ .expandable > label {
   font-weight: 700;
   color: var(--text-secondary);
 }
-.show:checked ~ label > .expandable > img {
-  transform: rotate(180deg);
-}
 
-.show:focus-within ~ label > .expandable >h2 {
-  color: var(--text-hover);
+.show:checked ~ label ~ img{
+  transform: rotate(180deg);
 }
 
 .attribution { 
