@@ -103,8 +103,8 @@ h2 {
     font-size: 1.2em;
     font-weight: 400;
     color: var(--text-tertiary);
-    margin-right: 1em;
-    padding: 1em 0;
+    margin-right: 2em;
+    padding: 0.3em 0;
 }
 
 .box-container {
@@ -129,11 +129,13 @@ section {
     border-bottom: 2px solid var(--accent);
     padding: 1em 0;
     position: relative;
+    align-items: space-between;
 }
 
 p {
     color: var(--text-tertiary);
     padding-top: 1em;
+    margin-right: 1em;
 }
 
 .expandable img {
@@ -197,13 +199,12 @@ h2:hover, h2:focus {
     margin: 3em;
     align-items: flex-start;
     overflow-y: scroll;
-    max-height: 22rem;
+    max-height: 21.5rem;
   }
 
   .right::-webkit-scrollbar{
     display: none;
-    -ms-overflow-style: none; /*edge*/
-    scrollbar-width: none; /*firefox*/
+    -ms-overflow-style: none; 
   }
 
   img.mobile{
@@ -236,7 +237,8 @@ h2:hover, h2:focus {
     transform: scale(2.5);
   }
 }
-/* for hidden checkbox stuff, testing*/
+
+/* for hidden checkbox stuff */
 .show, p {
   display: none;
 }
